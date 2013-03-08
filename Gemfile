@@ -21,6 +21,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'activeadmin'
+gem 'activeadmin'
+ gem "meta_search",    '>= 1.1.0.pre'
+ gem 'carrierwave'
+ gem "haml"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

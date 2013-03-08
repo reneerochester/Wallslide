@@ -1,0 +1,10 @@
+%h1
+%ul.photos		
+	- @photos.each do |photo|
+	%li
+		%h1.name
+		- photo.name
+		=image_tag photo.file
+
+		
+		
