@@ -1,7 +1,7 @@
-%h1
-%ul.photos		
-	- @photos.each do |photo|
-		%li
-			%h1.name
-				- photo.name
-			= link_to image_tag (photo.file_url(:thumb))
+#myCarousel.carousel.slide
+	.carousel-inner
+		- @photos.each_with_index do |photo, index|
+			.item{ class: ('active' if index == 0) }
+				= link_to image_tag (photo.file_url)
+	%a.carousel-control.left{:href => '#myCarousel', data: { slide: 'prev' }} &lsaquo;
+	%a.carousel-control.right{:href => '#myCarousel', data: { slide: 'next' }} &rsaquo;

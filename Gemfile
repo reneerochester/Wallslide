@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://production.cf.rubygems.org'
 
 gem 'rails', '3.2.12'
 
@@ -27,6 +28,10 @@ gem 'activeadmin'
  gem 'carrierwave'
  gem "haml"
  gem 'mini_magick'
+ gem "therubyracer"
+ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+ gem "twitter-bootstrap-rails"
+ gem "fog", "~> 1.3.1"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
