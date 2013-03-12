@@ -41,7 +41,7 @@ include CarrierWave::MiniMagick
   #rocess :scale => [200, 200]
   #end
   version :thumb do
-  process :resize_to_fill => [200, 200]
+  process :resize_to_fill => [400, 200]
 end
 
   # Add a white list of extensions which are allowed to be uploaded.
