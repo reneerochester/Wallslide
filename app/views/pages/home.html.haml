@@ -1,3 +1,4 @@
+
 #myCarousel.carousel.slide
 	.carousel-inner
 		- @photos.each_with_index do |photo, index|
@@ -5,3 +6,5 @@
 				= link_to image_tag (photo.file_url)
 	%a.carousel-control.left{:href => '#myCarousel', data: { slide: 'prev' }} &lsaquo;
 	%a.carousel-control.right{:href => '#myCarousel', data: { slide: 'next' }} &rsaquo;
+  
+= paginate @photos

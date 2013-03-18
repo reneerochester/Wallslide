@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
   def home
-    @photos = Photo.all
+    @photos = Photo.order("name").page(params[:page]).per(5)
   end
 end
