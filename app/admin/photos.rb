@@ -4,6 +4,7 @@ ActiveAdmin.register Photo do
     column :name
     column("thumbnail"){|photo| link_to image_tag (photo.file_url(:thumb))}
     column :url
+    column :content
     column :created_at
     column :updated_at
     
