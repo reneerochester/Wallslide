@@ -8,7 +8,8 @@ ActiveAdmin.register Photo do
     column :updated_at
     
     default_actions()
+    
   end
+
   form :partial => "form"
-  
 end

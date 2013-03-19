@@ -1,0 +1,10 @@
+<%= semantic_form_for [:admin, @photo] do |f| %>
+<% f.inputs do %>
+  <%= f.input :file%>
+  <%= f.input :name, input_html: {:class => "tinymce"}%>
+  <%= f.input :url %> 
+  
+  <%= f.actions :submit %>
+    <%= tinymce %>
+  <% end %>
+<% end %>
