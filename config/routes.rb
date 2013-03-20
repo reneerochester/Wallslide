@@ -27,19 +27,6 @@ SlidingGallery::Application.routes.draw do
 
   get "users/show"
 
-  get "user/new"
-
-  get "user/ceate"
-
-  get "user/update"
-
-  get "user/edit"
-
-  get "user/destroy"
-
-  get "user/index"
-
-  get "user/show"
 
   devise_for :users
 

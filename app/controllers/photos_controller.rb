@@ -1,9 +1,11 @@
 class PhotosController < ApplicationController
+  before_filter :authenticate_user!
   def new
-    @photo = current_user.photo.new
+    @photo = current_user.Photo.new
   end
 
   def ceate
+    
   end
 
   def update
@@ -16,7 +18,7 @@ class PhotosController < ApplicationController
   end
 
   def index
-    @photos = current_user.photos
+    @photos = current_user.Photo.all
   end
 
   def show
