@@ -34,6 +34,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 gem "fog", "~> 1.3.1"
 gem 'kaminari'
+gem 'devise'
  
 group :development do
   gem 'sqlite3'

@@ -1,4 +1,48 @@
 SlidingGallery::Application.routes.draw do
+  get "photos/new"
+
+  get "photos/ceate"
+
+  get "photos/update"
+
+  get "photos/edit"
+
+  get "photos/destroy"
+
+  get "photos/index"
+
+  get "photos/show"
+
+  get "users/new"
+
+  get "users/ceate"
+
+  get "users/update"
+
+  get "users/edit"
+
+  get "users/destroy"
+
+  get "users/index"
+
+  get "users/show"
+
+  get "user/new"
+
+  get "user/ceate"
+
+  get "user/update"
+
+  get "user/edit"
+
+  get "user/destroy"
+
+  get "user/index"
+
+  get "user/show"
+
+  devise_for :users
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
