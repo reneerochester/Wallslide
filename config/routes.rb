@@ -1,32 +1,4 @@
 SlidingGallery::Application.routes.draw do
-  get "photos/new"
-
-  get "photos/ceate"
-
-  get "photos/update"
-
-  get "photos/edit"
-
-  get "photos/destroy"
-
-  get "photos/index"
-
-  get "photos/show"
-
-  get "users/new"
-
-  get "users/ceate"
-
-  get "users/update"
-
-  get "users/edit"
-
-  get "users/destroy"
-
-  get "users/index"
-
-  get "users/show"
-
 
   devise_for :users
 
