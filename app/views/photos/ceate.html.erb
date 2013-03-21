@@ -1,2 +1,11 @@
-<h1>Photos#ceate</h1>
-<p>Find me in app/views/photos/ceate.html.erb</p>
+<%= semantic_form_for [:user, @photo] do |f| %>
+<%= f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :description, input_html: {:class => "tinymce" }%>
+    <%= f.input :url %>
+    <%= f.input :file %>
+    
+    <%= f.actions :submit %>
+      <%= tinymce %>
+  <% end %>
+<% end %>
