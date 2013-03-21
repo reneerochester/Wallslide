@@ -1,0 +1,10 @@
+- if user_signed_in?
+  = link_to "Create a new photo", new_photo_path
+#myCarousel.carousel.slide
+  .carousel-inner
+  - @photos.each_with_index do |photo, index|
+    .item{ class: ('active' if index == 0) }
+      = link_to image_tag (photo.file_url)
+  %a.carousel-control.left{:href => '#myCarousel', data: { slide: 'prev' }} &lsaquo;
+  %a.carousel-control.right{:href => '#myCarousel', data: { slide: 'next' }} &rsaquo;
+= paginate @photos
