@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title SlidingGallery
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header.row-fluid
+      %ul.nav.hmenu.span12
+        %li= render 'devise/menu/registration_items'
+        %li= render 'devise/menu/login_items'
+  = yield

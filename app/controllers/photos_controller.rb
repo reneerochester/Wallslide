@@ -16,7 +16,6 @@ class PhotosController < ApplicationController
   end
 
   def edit
-    #binding.pry
     respond_with @photo = current_user.photos.find_by_id( params[:id] )
     
   end

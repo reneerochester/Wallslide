@@ -2,8 +2,20 @@ ul.hmenu {
   list-style: none;	
   margin: 0 0 2em;
   padding: 0;
+  background-color:#282828;
 }
 
 ul.hmenu li {
-  display: inline;  
+  margin:10px;
+  overflow:hidden;
+  display: inline;
+  float:left;
+  a{ color:#3986ac;
+  }
+}
+
+body{
+  margin:0px;
+  background-color:#FFF;
+  
 }
