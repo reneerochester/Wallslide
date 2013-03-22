@@ -1,0 +1,8 @@
+.new_photo
+  %h1 Your New Photo!
+
+.new_photo_links
+  = link_to image_tag(@photo.file_url(:thumb))
+  
+=link_to "edit this photo", edit_photo_path, :class => "btn btn-primary"
+=link_to "view all of your photos", photos_path, :class => "btn btn-primary"

@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
   respond_to :html, :json 
   
   def index
-    respond_with @photos = Photo.order("name").page(params[:page]).per(5)
+    respond_with @photos = current_user.photos.order("name").page(params[:page]).per(5)
   end
   
   def show
@@ -16,7 +16,9 @@ class PhotosController < ApplicationController
   end
 
   def edit
+    #binding.pry
     respond_with @photo = current_user.photos.find_by_id( params[:id] )
+    
   end
 
 

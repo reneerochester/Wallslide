@@ -1,0 +1,15 @@
+.photo_links{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  border:1px solid #ddd;
+  display:block;
+  overflow:hidden;
+  li{
+    border-right:1px solid #ddd;
+    display:block;
+    margin:0px;
+    padding:10px;
+    float:left;
+  }
+}

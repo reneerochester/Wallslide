@@ -11,7 +11,7 @@ SlidingGallery::Application.routes.draw do
   # Sample of regular route:
   match 'pages/home' => 'pages#home'
   # Keep in mind you can assign values other than :controller and :action
-  
+  match '/slidewall' => 'pages#slidewall'
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
