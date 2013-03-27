@@ -7,7 +7,11 @@
     = csrf_meta_tags
   %body
     #header.row-fluid
-      %ul.nav.hmenu.span12
-        %li= render 'devise/menu/registration_items'
-        %li= render 'devise/menu/login_items'
-  = yield
+      .inner-header
+        %ul.nav.hmenu.span4
+          %li= render 'devise/menu/registration_items'
+          %li= render 'devise/menu/login_items'
+      .wallslide.span6= "Welcome to Wallslide - Your own sliding wallpaper gallery!"
+    #container.row-fluid
+      .inner-container.span12
+        = yield

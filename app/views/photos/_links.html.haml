@@ -1,9 +1,9 @@
 %ul.photo_links
-  %li= link_to "All Photos", photos_path
-  %li= link_to "New Photo", new_photo_path
+  %li= link_to "View All Photos", photos_path
+  %li= link_to "Upload", new_photo_path
   %li= link_to "View Your Slidewall", slidewall_path
   
   - if @photo.present?
-    %li= link_to "Edit Photo", edit_photo_path(@photo)
+    %li= link_to "Edit", edit_photo_path(@photo)
     %li= link_to "Preview Photo", photo_path(@photo)
-    %li= link_to "Destroy Photo", photo_path(@photo), :remote => true, :method => :delete
+    %li= link_to "Delete Photo", photo_path(@photo), :remote => true, :method => :delete
